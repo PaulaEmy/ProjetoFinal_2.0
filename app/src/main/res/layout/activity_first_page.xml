@@ -1,37 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
     android:padding="16dp"
-    android:background="#121212">
+    android:background="@drawable/halloweenbear">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bem-vindo ao Diário de Pesadelos"
-        android:textSize="24sp"
-        android:textColor="#ffffff"
+        android:fontFamily="@font/sanrio"
         android:gravity="center"
-        android:fontFamily="@font/Creepster"
-        android:paddingBottom="24dp" />
+        android:paddingBottom="300dp"
+        android:paddingTop="10dp"
+        android:text="Bem-vindo ao Diário de Pesadelos"
+        android:textColor="#ffffff"
+        android:textSize="40sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:textSize="16sp"
         android:textColor="#bdbdbd"
         android:gravity="center"
         android:paddingBottom="32dp" />
 
-    <Button
-        android:id="@+id/buttonStartDiary"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Começar"
-        android:fontFamily="@font/Creepster"
-        android:backgroundTint="#ffffff"
-        android:textColor="#ff4444" />
 </LinearLayout>

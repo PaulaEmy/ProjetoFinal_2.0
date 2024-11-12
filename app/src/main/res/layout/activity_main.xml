@@ -1,79 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:orientation="vertical"
-android:padding="16dp"
-android:background="#121212"> <!-- Fundo escuro -->
-
-<EditText
-    android:id="@+id/editTextTitle"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:hint="Título do pesadelo"
-    android:inputType="text"
-    android:textColor="#ffffff"
-    android:textColorHint="#777777" />
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background2">
 
-<EditText
-    android:id="@+id/editTextDate"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:hint="Data (DD/MM/AAAA)"
-    android:inputType="date"
-    android:textColor="#ffffff"
-    android:textColorHint="#777777" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sanrio"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="Diário de pesadelos"
+        android:textColor="#ffffff"
+        android:textSize="40sp" />
 
-<EditText
-    android:id="@+id/editTextDescription"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:hint="Descrição do pesadelo"
-    android:inputType="textMultiLine"
-    android:textColor="#ffffff"
-    android:textColorHint="#777777"
-    android:lines="4" />
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:hint="Data (DD/MM/AAAA)"
+        android:fontFamily="@font/unicornscribbles"
+        android:inputType="date"
+        android:textColor="#777777"
+        android:textColorHint="#777777" />
 
-<EditText
-    android:id="@+id/editTextTerrorRating"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:hint="Classificação de Terror (1-5)"
-    android:inputType="number"
-    android:textColor="#ffffff"
-    android:textColorHint="#777777" />
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/unicornscribbles"
+        android:hint="Título do pesadelo"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:inputType="text"
+        android:textColor="#ffffff"
+        android:textColorHint="#777777" />
 
-<EditText
-    android:id="@+id/editTextTags"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:hint="Tags (ex: monstros, sombras)"
-    android:inputType="text"
-    android:textColor="#ffffff"
-    android:textColorHint="#777777" />
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/unicornscribbles"
+        android:hint="Descrição"
+        android:inputType="textMultiLine"
+        android:textColor="#ffffff"
+        android:textColorHint="#777777"
+        android:lines="10" />
 
-<Button
-    android:id="@+id/buttonInsertNightmare"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Registrar Pesadelo"
-    android:backgroundTint="#ff4444"
-    android:textColor="#ffffff" />
+    <Spinner
+        android:id="@+id/spinnerTerrorRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#777777"
+        android:spinnerMode="dropdown" />
 
-<Button
-    android:id="@+id/buttonViewNightmares"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Visualizar Pesadelos"
-    android:backgroundTint="#666666"
-    android:textColor="#ffffff" />
+    <EditText
+        android:id="@+id/editTextTags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tags (ex: monstros, sombras)"
+        android:fontFamily="@font/unicornscribbles"
+        android:inputType="text"
+        android:textColor="#ffffff"
+        android:textColorHint="#777777" />
 
-<TextView
-    android:id="@+id/textViewNightmareData"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Pesadelos registrados aparecerão aqui"
-    android:paddingTop="16dp"
-    android:textColor="#ffffff" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/buttonInsertNightmare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registrar Pesadelo"
+            android:fontFamily="@font/unicornscribbles"
+            android:backgroundTint="#a36a17"
+            android:textColor="#ffffff"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/buttonViewNightmares"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/unicornscribbles"
+            android:text="Visualizar Pesadelos"
+            android:backgroundTint="#777777"
+            android:textColor="#ffffff" />
+    </LinearLayout>
 </LinearLayout>
-
